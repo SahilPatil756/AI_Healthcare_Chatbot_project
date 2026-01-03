@@ -10,59 +10,102 @@ This chatbot is not a substitute for professional medical advice — it's only f
 💬 Conversational AI – Understands user questions using NLP.
 🩺 Symptom Checker – Suggests possible conditions based on user symptoms.
 💊 Medicine Info Lookup – Provides information about common medicines.
-# AI_HEALTHCARE_CHATBOT_PROJECT
+# AI Healthcare Chatbot Project
 
-Empowering Health with Intelligent, Instant Answers
+## Healthcare Intelligence & Medical Analytics Platform
 
-![Last Commit](https://img.shields.io/badge/last_commit-october_2024-blue)
-![License](https://img.shields.io/badge/license-AGPL_3.0-blue)
-![Languages](https://img.shields.io/badge/languages-1-blue)
-
-Built with the tools and technologies:
-![Flask](https://img.shields.io/badge/Flask-black?style=flat&logo=flask)
-![Pinecone](https://img.shields.io/badge/Pinecone-black?style=flat&logo=pinecone)
-![LangChain](https://img.shields.io/badge/LangChain-green?style=flat)
-![Python](https://img.shields.io/badge/Python-blue?style=flat&logo=python)
-
----
-
-## Table of Contents
-* [Overview](#overview)
-* [Getting Started](#getting-started)
-    * [Prerequisites](#prerequisites)
-    * [Installation](#installation)
-* [Usage](#usage)
-* [Testing](#testing)
+### Table of Contents
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
 ## Overview
+The AI Healthcare Chatbot Project is an innovative, AI-powered healthcare assistant designed to deliver accessible primary healthcare resources and assistance through natural language communication. This platform provides seamless integration of medical knowledge, healthcare workflows, and document analysis within a scalable application framework.
 
-**AI_Healthcare_Chatbot_project** is an innovative developer tool that combines vector-based knowledge retrieval with local language models to deliver accurate, privacy-conscious healthcare information through conversational AI. It enables seamless integration of medical knowledge, symptom checking, and document analysis within a scalable architecture.
+**Key Objectives:**
+- Provide intelligent healthcare information retrieval
+- Support medical professionals with diagnostic assistance
+- Enhance patient engagement and education
+- Streamline healthcare documentation and analysis
 
-### Why AI_Healthcare_Chatbot_project?
+### Medical Domains Covered
+- **Triglycerides & Lipid Management**
+- **Diagnostics & Medical Services**
+- **Clinical Studies & Research**
+- **Biostatistics & Medical Analytics**
+- **Joint Health & Orthopedics**
+- **Medical Economics & Healthcare Management**
 
-This project empowers developers to build intelligent, privacy-preserving healthcare assistants. The core features include:
+---
 
-* 🧠 **Knowledge Retrieval**: Integrates vector search with LLMs for efficient, context-aware medical information access.
-* 💬 **Interactive Q&A**: Facilitates natural, real-time health inquiries without relying solely on external APIs.
-* 📄 **Document Embedding**: Automates ingestion and embedding of medical PDFs for variable document analysis.
-* ⚙️ **Modular Architecture**: Supports flexible development with components for knowledge, memory, and response generation.
-* 🚀 **Performance & Scalability**: Designed for fast, accurate responses in health-focused applications.
+## Key Features
+
+### 🧠 AI-Powered Knowledge Retrieval
+- Advanced natural language processing for medical queries
+- Context-aware response generation
+- Integration with medical databases and research
+
+### 🏥 Clinical Decision Support
+- Evidence-based medical recommendations
+- Diagnostic assistance and symptom analysis
+- Drug interaction and contraindication checks
+
+### 📊 Medical Analytics Dashboard
+- Patient data visualization and analysis
+- Treatment outcome tracking
+- Healthcare metrics and performance monitoring
+
+### 🔄 Seamless Integration
+- EHR/EMR system compatibility
+- API-first architecture for third-party integration
+- Scalable microservices architecture
+
+### 🔒 Security & Compliance
+- HIPAA-compliant data handling
+- Secure patient data management
+- Audit trails and access controls
 
 ---
 
 ## Getting Started
 
 ### Prerequisites
-This project requires the following dependencies:
-* Programming Language: **Python**
-* Package Manager: **Pipenv**
+
+**Required Technologies:**
+- Python 3.9+
+- FastAPI
+- PostgreSQL 12+
+- Redis 6+
+- Docker (optional)
+- Node.js 16+ (for frontend)
+
+**Python Dependencies:**
+- PyTorch/TensorFlow
+- Transformers (Hugging Face)
+- LangChain
+- SQLAlchemy
+- Pydantic
 
 ### Installation
-Build AI_Healthcare_Chatbot_project from the source and install dependencies:
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/user/AI_Healthcare_Chatbot_project.git](https://github.com/user/AI_Healthcare_Chatbot_project.git)
-   
+#### Method 1: Docker Installation (Recommended)
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/ai-healthcare-chatbot.git
+cd ai-healthcare-chatbot
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# Build and run with Docker Compose
+docker-compose up --build
